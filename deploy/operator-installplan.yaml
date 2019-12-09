@@ -1,0 +1,9 @@
+apiVersion: operators.coreos.com/v1alpha1 
+kind: InstallPlan
+metadata:
+  namespace: openshift-operators 
+  name: my-installplan
+spec:
+  clusterServiceVersionNames:
+  - memcached-operator 
+  approval: Automatic
